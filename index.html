@@ -13,7 +13,7 @@
 		
 		let delta = b * b - 4 * a * c;
 		
-		if (delta == 0) {
+		if (a == 0) {
 			alert("O valor de a não pode ser zero")
 			
 		} else if (delta >= 0) {
@@ -28,6 +28,13 @@
 		} else {
 			alert("Não existem raízes reais.");
 		}
+
+		let repetir;
+
+		do {
+			repetir = confirm("Queres resolver outra equação?");
+			
+		} while (repetir == true)
 		
 	</script>
 	
